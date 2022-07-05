@@ -1,0 +1,77 @@
+@import '../settings';
+
+@mixin casesItem($root-class-name) {
+  .#{$root-class-name} {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    color: $white-color;
+    font-size: $xs-unit * 14;
+    font-weight: 300;
+    line-height: $xs-unit * 20;
+    display: grid;
+    padding: map-get($units, xsmall) * 13 0;
+    grid-template-columns: map-get($units, xsmall) * 45 1fr;
+    grid-column-gap: map-get($units, xsmall) * 33;
+
+    &__head {
+      display: flex;
+      align-items: center;
+    }
+
+    &__icon {
+      width: 100%;
+    }
+  }
+
+  @include breakpoint(small) {
+    .#{$root-class-name} {
+      //width: 50%;
+      font-size: $s-unit * 14;
+      line-height: $s-unit * 20;
+      padding: map-get($units, small) * 13 0;
+      grid-template-columns: map-get($units, small) * 45 1fr;
+      grid-column-gap: map-get($units, small) * 33;
+    }
+  }
+
+  @include breakpoint(medium) {
+    .#{$root-class-name} {
+      font-size: $m-unit * 14;
+      line-height: $m-unit * 20;
+      padding: map-get($units, medium) * 13 0;
+      grid-template-columns: map-get($units, medium) * 52 1fr;
+      grid-column-gap: map-get($units, medium) * 33;
+    }
+  }
+
+  @include breakpoint(large) {
+    .#{$root-class-name} {
+      font-size: $l-unit * 14;
+      line-height: $l-unit * 20;
+      padding: map-get($units, large) * 13 0;
+      grid-template-columns: map-get($units, large) * 52 1fr;
+      grid-column-gap: map-get($units, large) * 33;
+    }
+  }
+
+  @include breakpoint(xlarge) {
+    .#{$root-class-name} {
+      font-size: $xl-unit * 14;
+      line-height: $xl-unit * 20;
+      padding: map-get($units, xlarge) * 13 0;
+      grid-template-columns: map-get($units, xlarge) * 52 1fr;
+      grid-column-gap: map-get($units, xlarge) * 33;
+    }
+  }
+
+  @include breakpoint(xxlarge) {
+    .#{$root-class-name} {
+      font-size: $xxl-unit * 14;
+      line-height: $xxl-unit * 20;
+      padding: map-get($units, xxlarge) * 13 0;
+      grid-template-columns: map-get($units, xxlarge) * 52 1fr;
+      grid-column-gap: map-get($units, xxlarge) * 33;
+    }
+  }
+}

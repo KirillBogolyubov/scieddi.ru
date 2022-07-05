@@ -1,0 +1,94 @@
+@import '~foundation-sites/scss/util/util';
+@import '~modularscale-sass';
+
+$modularscale: (
+  base: 16px,
+  ratio: 1.16
+);
+
+$xs-unit: 100vw / 375;
+$s-unit: 100vw / 600;
+$m-unit: 100vw / 800;
+$l-unit: 100vw / 1100;
+$xl-unit: 100vw / 1400;
+$xxl-unit: 100vw / 1900;
+$xxxl-unit: 100vw / 2400;
+
+$breakpoints: (
+        xsmall: 0,
+        small: 425px,
+        medium: 740px,
+        large: 1024px,
+        xlarge: 1200px,
+        xxlarge: 1440px,
+        xxxlarge: 1680px,
+);
+
+$units: (
+        xsmall: $xs-unit,
+        small: $s-unit,
+        medium: $m-unit,
+        large: $l-unit,
+        xlarge: $xl-unit,
+        xxlarge: $xxl-unit,
+        xxxlarge: $xxxl-unit,
+);
+
+$padding: (
+        xsmall: 20.66,
+        small: 20.66,
+        medium: 40.96,
+        large: 80.96,
+        xlarge: 81.31,
+        xxlarge: 240.35
+);
+
+//$breakpoints-container: map_get($breakpoints, xxlarge) - ms(0) * 2;
+
+$primary-color: #1d2745;    // главный цвет фона
+$secondary-color: #E7A52E;
+
+$header-footer-gradient: linear-gradient(90deg, #101C42 0%, #3F608D 98.7%);
+$white-color: #F3F3F3;
+$dark-blue-color: #1F2A49;  // цвет карточки (Наши цели) и фона при наведении (Кейсы)
+$blur-green-color: #1F444C; // размытые круги на фоне
+$blur-blue-color: #224561;  // размытые круги на фоне
+
+$color-near-black: #10172d;
+$color-success: #C1E9AF;
+$color-invalid: #dc4632;
+
+$color-target-card-content-background: $white-color;
+$color-target-card-content-color: $color-near-black;
+$color-target-card-content-color-underline: $secondary-color;
+$color-target-card-keywords-background: $color-near-black;
+$color-target-card-keywords-color: #6c7286;
+$color-target-card-keywords-hash: $secondary-color;
+
+$color-the-header-text: $white-color;
+$color-the-header-background: $color-near-black;
+
+$color-word-stroke-text: $white-color;
+
+$color-dot: $white-color;
+$color-dot-active: $secondary-color;
+
+$color-photo-card-name: $white-color;
+
+$color-counter-progress-color: #3d4765;
+$color-counter-progress-color-active: $white-color;
+
+$color-round-button-border: $white-color;
+$color-round-button-active: $secondary-color;
+
+$color-header: $white-color;
+$color-header-line: $secondary-color;
+
+$color-header-h2-text-color: $white-color;
+$color-header-h2-line-color: $secondary-color;
+$color-header-h2-description-border-color: $secondary-color;
+$color-header-h2-description-text-color: $white-color;
+
+$color-header-circle-text-color: $white-color;
+$color-header-circle-background-color: $secondary-color;
+

@@ -1,0 +1,213 @@
+@import '../settings';
+
+@mixin footer($root-class-name) {
+  .#{$root-class-name} {
+    border-top: 0.5px solid rgba($white-color, 0.3);
+    padding-bottom: map-get($units, xsmall) * 30;
+
+
+    &__content {
+      color: $white-color;
+      font-size: map-get($units, xsmall) * 14;
+      line-height: map-get($units, xsmall) * 22;
+      padding: map-get($units, xsmall) * 30 0;
+
+      &-text {
+        padding: map-get($units, xsmall) * 10 0;
+      }
+    }
+
+    &__button {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: rgba(192,192,192,0.3);
+      border-radius: map-get($units, xsmall) * 50;
+      cursor: pointer;
+      width: 80%;
+      height: map-get($units, xsmall) * 48;
+      text-decoration: none;
+
+      &-icon {
+        border-right: 0.2px solid $white-color;
+        padding-right: map-get($units, xsmall) * 20;
+        padding-left: map-get($units, xsmall) * 10;
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+
+      &-link {
+        color: $white-color;
+        font-size: map-get($units, xsmall) * 14;
+        font-weight: bold;
+        padding-right: map-get($units, xsmall) * 20;
+        text-align: center;
+        text-decoration: none;
+      }
+    }
+  }
+
+  @include breakpoint(small) {
+    .#{$root-class-name} {
+      padding-bottom: map-get($units, small) * 30;
+
+      &__content {
+        font-size: map-get($units, small) * 14;
+        line-height: map-get($units, small) * 22;
+        padding: map-get($units, small) * 30 0;
+
+        &-text {
+          padding: map-get($units, small) * 10 0;
+        }
+      }
+
+      &__button {
+        border-radius: map-get($units, small) * 50;
+        width: 50%;
+        height: map-get($units, small) * 48;
+
+        &-icon {
+          padding-right: map-get($units, small) * 20;
+          padding-left: map-get($units, small) * 10;
+        }
+
+        &-link {
+          font-size: map-get($units, small) * 14;
+          padding-right: map-get($units, small) * 20;
+        }
+      }
+    }
+  }
+
+  @include breakpoint(medium) {
+    .#{$root-class-name} {
+      padding-bottom: map-get($units, medium) * 30;
+
+      &__content {
+        font-size: map-get($units, medium) * 14;
+        line-height: map-get($units, medium) * 22;
+        padding: map-get($units, medium) * 30 0;
+
+        &-text {
+          padding: map-get($units, medium) * 10 0;
+        }
+      }
+
+      &__button {
+        border-radius: map-get($units, medium) * 50;
+        width: 40%;
+        height: map-get($units, medium) * 48;
+
+        &-icon {
+          padding-right: map-get($units, medium) * 20;
+          padding-left: map-get($units, medium) * 10;
+        }
+
+        &-link {
+          font-size: map-get($units, medium) * 14;
+          padding-right: map-get($units, medium) * 20;
+        }
+      }
+    }
+  }
+
+  @include breakpoint(large) {
+    .#{$root-class-name} {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: map-get($units, large) * 30;
+
+      &__content {
+        font-size: map-get($units, large) * 16;
+        line-height: map-get($units, large) * 22;
+        padding: map-get($units, large) * 30 0;
+
+        &-text {
+          padding: map-get($units, large) * 10 0;
+        }
+      }
+
+      &__button {
+        border-radius: map-get($units, large) * 50;
+        height: map-get($units, large) * 48;
+        width: 30%;
+
+        &-icon {
+          padding-right: map-get($units, large) * 20;
+          padding-left: map-get($units, large) * 10;
+        }
+
+        &-link {
+          font-size: map-get($units, large) * 14;
+          padding-right: map-get($units, large) * 20;
+        }
+      }
+    }
+  }
+
+  @include breakpoint(xlarge) {
+    .#{$root-class-name} {
+      padding-bottom: map-get($units, xlarge) * 30;
+
+      &__content {
+        font-size: map-get($units, xlarge) * 16;
+        line-height: map-get($units, xlarge) * 22;
+        padding: map-get($units, xlarge) * 30 0;
+
+        &-text {
+          padding: map-get($units, xlarge) * 10 0;
+        }
+      }
+
+      &__button {
+        border-radius: map-get($units, xlarge) * 50;
+        width: 22%;
+        height: map-get($units, xlarge) * 48;
+
+        &-icon {
+          padding-right: map-get($units, xlarge) * 20;
+          padding-left: map-get($units, xlarge) * 10;
+        }
+
+        &-link {
+          font-size: map-get($units, xlarge) * 14;
+          padding-right: map-get($units, xlarge) * 20;
+        }
+      }
+    }
+  }
+
+  @include breakpoint(xxlarge) {
+    .#{$root-class-name} {
+      padding-bottom: map-get($units, xxlarge) * 30;
+
+      &__content {
+        font-size: map-get($units, xxlarge) * 16;
+        line-height: map-get($units, xxlarge) * 22;
+        padding: map-get($units, xxlarge) * 30 0;
+
+        &-text {
+          padding: map-get($units, xxlarge) * 10 0;
+        }
+      }
+
+      &__button {
+        border-radius: map-get($units, xxlarge) * 50;
+        height: map-get($units, xxlarge) * 48;
+
+        &-icon {
+          padding-right: map-get($units, xxlarge) * 20;
+          padding-left: map-get($units, xxlarge) * 10;
+        }
+
+        &-link {
+          font-size: map-get($units, xxlarge) * 14;
+          padding-right: map-get($units, xxlarge) * 20;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
